@@ -32,21 +32,32 @@ lc.preprocess_land_cover_layer(
     layer='building_blocks',
     priority=1,
     boundary='boundary',
-    seglen=2,
-    snap=1,
+    seglen=1,
+    snap=0.5,
     simplify=1,
     area_thr=10
 )
+
+# Check preprocess result
+# bb = lc.gs.to_gpd('building_blocks')
+# bb.crs
+# bb.plot()
+
 
 lc.preprocess_land_cover_layer(
     layer='permeable',
     priority=2,
     boundary='boundary',
-    seglen=2,
-    snap=1,
+    seglen=1,
+    snap=0.55,
     simplify=1,
     area_thr=10
-)       
+)
+
+# Check preprocess result
+# p = lc.gs.to_gpd('permeable')
+# p.crs
+# p.plot()
 
 #%%
 # generate land cover interactive
@@ -62,6 +73,11 @@ lc.generate_land_cover_interactive(
     simplify=1,
     output='land_cover'
 )
+
+# Check land cover interactive result
+# lci = lc.gs.to_gpd('land_cover')
+# lci.crs
+# lci.plot()
 
 #%%
 # generate land cover static
@@ -79,6 +95,11 @@ lc.generate_land_cover_static(
     seglen=1,
     output='land_cover_static'
 )
+
+# Check land cover static result
+# lcs = lc.gs.to_gpd('land_cover_static')
+# lcs.crs
+# lcs.plot()
 
 #%%
 # consolidate topology land cover interactive
@@ -101,7 +122,7 @@ lc.consolidate_topology(
     snap=1,
     simplify=1,
     area_thr=10,
-    output_boundary='boundary',
+    output_boundary='boundary_static',
     output_land_cover='land_cover_static'
 )
 
