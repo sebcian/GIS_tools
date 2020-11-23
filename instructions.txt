@@ -27,4 +27,3 @@ GIS tools are ready to use. An example project is located in './gis_udm/Examples
 Become a contributor
     1. Install Git
     2. Install Github Desktop (especially if you are new to Github)
-RECOMMENDATION:
