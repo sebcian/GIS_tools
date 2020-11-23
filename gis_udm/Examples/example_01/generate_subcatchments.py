@@ -4,7 +4,7 @@
 
 #%%
 # Modules
-import os #line added
+import os
 import geopandas as gpd
 from gis_udm import utils, subcatchments
 
