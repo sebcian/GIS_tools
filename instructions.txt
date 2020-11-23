@@ -1,0 +1,24 @@
+Anaconda installation
+    1. Install Anaconda/Miniconda
+    2. Open Anaconda/Miniconda prompt
+    3. conda create --name 'envname' python=3 -c conda-forge
+    4. conda activate 'envname'
+    5. conda config --env --add channels conda-forge
+    6. conda install jupyterlab ipykernel pyyaml geopandas matplotlib descartes seaborn ... (all modules that you use/need)
+
+Configuration
+    1. Download repository from https://github.com/agonzaleziniguez/GIS_tools.git
+    2. Open GIS tools folder
+    3. Open 'configuration_file.yml' and set the required paths
+    4. Open Anaconda/Miniconda prompt.
+    5. In Anaconda/Miniconda prompt, navigate to GIS tools folder.
+    6. conda activate 'envname'
+    7. type "python setup.py" hit enter
+    8. conda deactivate
+    9. conda activate 'envname'
+
+GIS tools are ready to use. An example project is located in './gis_udm/Examples/example_01'
+    Run the example_01 scripts in the following order:
+        1. generate_model_boundary.py
+        2. generate_land_cover.py
+        3. generate_subcatchments.py
