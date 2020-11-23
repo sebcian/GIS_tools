@@ -22,3 +22,9 @@ GIS tools are ready to use. An example project is located in './gis_udm/Examples
         1. generate_model_boundary.py
         2. generate_land_cover.py
         3. generate_subcatchments.py
+
+
+Become a contributor
+    1. Install Git
+    2. Install Github Desktop (especially if you are new to Github)
+RECOMMENDATION:
