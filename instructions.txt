@@ -7,6 +7,7 @@ Anaconda installation
     6. conda install jupyterlab ipykernel pyyaml geopandas matplotlib descartes seaborn ... (all modules that you use/need)
 
 Configuration
+    0. Download https://github.com/agonzaleziniguez/GIS_tools.git
     1. Open GIS tools folder
     2. Open 'configuration_file.yml' and set the required paths
     3. Open Anaconda/Miniconda prompt.
